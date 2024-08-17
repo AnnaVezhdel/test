@@ -1,6 +1,9 @@
-import Swiperr from 'swiper/bundle';
+import Swiper from 'swiper';
+import 'swiper/css';
+import { Navigation } from 'swiper/modules';
 
-new Swiperr('.swiper-pr', {
+new Swiper('.swiper-projects', {
+  modules: [Navigation],
   direction: 'horizontal',
   navigation: {
     nextEl: '.projects-btn-next',
