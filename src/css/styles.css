@@ -47,12 +47,6 @@ body {
     max-width: 1440px;
   }
 }
-.page-projects {
-  padding-top: 82px;
-  padding-bottom: 82px;
-  position: relative;
-}
-
 .projects-items {
   min-width: 320px;
   display: flex;
@@ -218,7 +212,6 @@ body {
 }
 
 .see-project {
-  font-family: 'Inter Tight';
   font-style: normal;
   font-weight: 500;
   letter-spacing: -0.02em;
