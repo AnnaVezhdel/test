@@ -75,19 +75,19 @@ function createProjectsSlideMarkup(mob_1x, mob_2x, tab_1x, tab_2x, main, descrip
             <picture class="projects-picture-item">
               <source
                 srcset="
-                ../img/${tab_1x} 1x,
-                ../img/${tab_2x} 2x"
+                ../src/img/${tab_1x} 1x,
+                ../src/img/${tab_2x} 2x"
                 media="(min-width: 768px)"
               />
               <source
                 srcset="
-                ../img/${mob_1x} 1x,
-                ../img/${mob_2x} 2x"
+                ../src/img/${mob_1x} 1x,
+                ../src/img/${mob_2x} 2x"
                 media="(max-width: 767px)"
               />
               <img
                 class="projects-img"
-                src="../img/${main}"
+                src="../src/img/${main}"
                 alt="${description}"
                 width="614"
                 height="385"
