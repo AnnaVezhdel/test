@@ -36,9 +36,9 @@ import vocab_main from './img/vocab-tab.jpg';
 
 const projectImages = [
   {
-    mob_1x: '../src/img/book-mob.jpg',
-    mob_2x: '../src/img/book-mob-2x.jpg',
-    tab_1x: '../src/img/book-tab.jpg',
+    mob_1x: './src/img/book-mob.jpg',
+    mob_2x: './img/book-mob-2x.jpg',
+    tab_1x: './img/book-tab.jpg',
     tab_2x: '../src/img/book-tab-2x.jpg',
     main: '../src/img/book-tab.jpg',
     description: 'ReadJourney',
