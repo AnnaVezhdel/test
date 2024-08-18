@@ -1,16 +1,13 @@
-import Swiper from 'swiper';
+import Swiper from 'swiper/bundle';
 import 'swiper/css';
 import 'swiper/css/navigation';
-import { Navigation, Mousewheel, Keyboard } from 'swiper/modules';
 
 new Swiper('.swiper-projects', {
-  modules: [Navigation, Mousewheel, Keyboard],
   direction: 'horizontal',
   navigation: {
     nextEl: '.projects-btn-next',
     prevEl: '.projects-btn-prev',
   },
-
   slidesPerView: 1,
   spaceBetween: 34,
   keyboard: {
@@ -23,27 +20,27 @@ const projectsList = document.querySelector('.projects-list');
 
 const projectImages = [
   {
-    mob_1x: 'book-mob.jpg',
-    mob_2x: 'book-mob-2x.jpg',
-    tab_1x: 'book-tab.jpg',
-    tab_2x: 'book-tab-2x.jpg',
-    main: 'book-tab.jpg',
+    mob_1x: './img/book-mob.jpg',
+    mob_2x: './img/book-mob-2x.jpg',
+    tab_1x: './img/book-tab.jpg',
+    tab_2x: './img/book-tab-2x.jpg',
+    main: './img/book-tab.jpg',
     description: 'ReadJourney',
   },
   {
-    mob_1x: 'pet-mob.jpg',
-    mob_2x: 'pet-mob-2x.jpg',
-    tab_1x: 'pet-tab.jpg',
-    tab_2x: 'pet-tab-2x.jpg',
-    main: 'pet-tab.jpg',
+    mob_1x: './img/pet-mob.jpg',
+    mob_2x: './img/pet-mob-2x.jpg',
+    tab_1x: './img/pet-tab.jpg',
+    tab_2x: './img/pet-tab-2x.jpg',
+    main: './img/pet-tab.jpg',
     description: 'PetLove',
     },
   {
-    mob_1x: 'vocab-mob.jpg',
-    mob_2x: 'vocab-mob-2x.jpg',
-    tab_1x: 'vocab-tab.jpg',
-    tab_2x: 'vocab-tab-2x.jpg',
-    main: 'vocab-tab.jpg',
+    mob_1x: './img/vocab-mob.jpg',
+    mob_2x: './img/vocab-mob-2x.jpg',
+    tab_1x: './img/vocab-tab.jpg',
+    tab_2x: './img/vocab-tab-2x.jpg',
+    main: './img/vocab-tab.jpg',
     description: 'VocabBuilder',
     }
 ];
