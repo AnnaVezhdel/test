@@ -1,9 +1,10 @@
 import Swiper from 'swiper';
 import 'swiper/css';
-import { Navigation } from 'swiper/modules';
+import 'swiper/css/navigation';
+import { Navigation, Mousewheel, Keyboard } from 'swiper/modules';
 
 new Swiper('.swiper-projects', {
-  modules: [Navigation],
+  modules: [Navigation, Mousewheel, Keyboard],
   direction: 'horizontal',
   navigation: {
     nextEl: '.projects-btn-next',
@@ -12,7 +13,6 @@ new Swiper('.swiper-projects', {
 
   slidesPerView: 1,
   spaceBetween: 34,
-
   keyboard: {
     enabled: true,
     onlyInViewport: false,
