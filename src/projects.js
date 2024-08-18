@@ -15,9 +15,6 @@ new Swiper('.swiper-projects', {
     onlyInViewport: false,
   },
 });
-import Swiper from 'swiper/bundle';
-import 'swiper/css';
-import 'swiper/css/navigation';
 
 import book_mob_1x from './img/book-mob.jpg';
 import book_mob_2x from './img/book-mob-2x.jpg';
