@@ -15,56 +15,79 @@ new Swiper('.swiper-projects', {
     onlyInViewport: false,
   },
 });
+import Swiper from 'swiper/bundle';
+import 'swiper/css';
+import 'swiper/css/navigation';
 
-import mob_1x from './img/book-mob.jpg';
-import mob_2x from './img/book-mob-2x.jpg';
-import tab_1x from './img/book-tab.jpg';
-import tab_2x from './img/book-tab-2x.jpg';
-import main from './img/book-tab.jpg';
+import book_mob_1x from './img/book-mob.jpg';
+import book_mob_2x from './img/book-mob-2x.jpg';
+import book_tab_1x from './img/book-tab.jpg';
+import book_tab_2x from './img/book-tab-2x.jpg';
+import book_main from './img/book-tab.jpg';
 
+import pet_mob_1x from './img/pet-mob.jpg';
+import pet_mob_2x from './img/pet-mob-2x.jpg';
+import pet_tab_1x from './img/pet-tab.jpg';
+import pet_tab_2x from './img/pet-tab-2x.jpg';
+import pet_main from './img/pet-tab.jpg';
 
-// mob_1x: './src/img/pet-mob.jpg',
-// mob_2x: './src/img/pet-mob-2x.jpg',
-// tab_1x: './src/img/pet-tab.jpg',
-// tab_2x: './src/img/pet-tab-2x.jpg',
-// main: '../img/pet-tab.jpg',
-
-// mob_1x: '../src/img/vocab-mob.jpg',
-// mob_2x: '../src/img/vocab-mob-2x.jpg',
-// tab_1x: '../src/img/vocab-tab.jpg',
-// tab_2x: '../src/img/vocab-tab-2x.jpg',
-// main: '../src/img/vocab-tab.jpg',
-
-const projectsList = document.querySelector('.projects-list');
+import vocab_mob_1x from './img/vocab-mob.jpg';
+import vocab_mob_2x from './img/vocab-mob-2x.jpg';
+import vocab_tab_1x from './img/vocab-tab.jpg';
+import vocab_tab_2x from './img/vocab-tab-2x.jpg';
+import vocab_main from './img/vocab-tab.jpg';
 
 const projectImages = [
   {
-    mob_1x: './img/book-mob.jpg',
-    mob_2x: './img/book-mob-2x.jpg',
-    tab_1x: './img/book-tab.jpg',
-    tab_2x: './img/book-tab-2x.jpg',
-    main: './img/book-tab.jpg',
+    mob_1x: book_mob_1x,
+    mob_2x: book_mob_2x,
+    tab_1x: book_tab_1x,
+    tab_2x: book_tab_2x,
+    main: book_main,
     description: 'ReadJourney',
   },
   {
-    mob_1x: './src/img/pet-mob.jpg',
-    mob_2x: './src/img/pet-mob-2x.jpg',
-    tab_1x: './src/img/pet-tab.jpg',
-    tab_2x: './src/img/pet-tab-2x.jpg',
-    main: '../img/pet-tab.jpg',
+    mob_1x: pet_mob_1x,
+    mob_2x: pet_mob_2x,
+    tab_1x: pet_tab_1x,
+    tab_2x: pet_tab_2x,
+    main: pet_main,
     description: 'PetLove',
-    },
+  },
   {
-    mob_1x: '../src/img/vocab-mob.jpg',
-    mob_2x: '../src/img/vocab-mob-2x.jpg',
-    tab_1x: '../src/img/vocab-tab.jpg',
-    tab_2x: '../src/img/vocab-tab-2x.jpg',
-    main: '../src/img/vocab-tab.jpg',
+    mob_1x: vocab_mob_1x,
+    mob_2x: vocab_mob_2x,
+    tab_1x: vocab_tab_1x,
+    tab_2x: vocab_tab_2x,
+    main: vocab_main,
     description: 'VocabBuilder',
-    }
+  },
 ];
 
-function createProjectsSlideMarkup(mob_1x, mob_2x, tab_1x, tab_2x, main, description) {
+new Swiper('.swiper-projects', {
+  direction: 'horizontal',
+  navigation: {
+    nextEl: '.projects-btn-next',
+    prevEl: '.projects-btn-prev',
+  },
+  slidesPerView: 1,
+  spaceBetween: 34,
+  keyboard: {
+    enabled: true,
+    onlyInViewport: false,
+  },
+});
+
+const projectsList = document.querySelector('.projects-list');
+
+function createProjectsSlideMarkup(
+  mob_1x,
+  mob_2x,
+  tab_1x,
+  tab_2x,
+  main,
+  description
+) {
   const markup = `
       <li class="swiper-slide projects-slide">
         <div class="projects-items">
@@ -119,6 +142,7 @@ function createProjectsSlideMarkup(mob_1x, mob_2x, tab_1x, tab_2x, main, descrip
 
   projectsList.insertAdjacentHTML('beforeend', markup);
 }
-projectImages.map(({ mob_1x, mob_2x, tab_1x, tab_2x, main,description }) => {
+projectImages.map(({ mob_1x, mob_2x, tab_1x, tab_2x, main, description }) => {
   createProjectsSlideMarkup(mob_1x, mob_2x, tab_1x, tab_2x, main, description);
 });
+
