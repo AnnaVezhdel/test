@@ -16,6 +16,25 @@ new Swiper('.swiper-projects', {
   },
 });
 
+import mob_1x from './img/book-mob.jpg';
+import mob_2x from './img/book-mob-2x.jpg';
+import tab_1x from './img/book-tab.jpg';
+import tab_2x from './img/book-tab-2x.jpg';
+import main from './img/book-tab.jpg';
+
+
+// mob_1x: './src/img/pet-mob.jpg',
+// mob_2x: './src/img/pet-mob-2x.jpg',
+// tab_1x: './src/img/pet-tab.jpg',
+// tab_2x: './src/img/pet-tab-2x.jpg',
+// main: '../img/pet-tab.jpg',
+
+// mob_1x: '../src/img/vocab-mob.jpg',
+// mob_2x: '../src/img/vocab-mob-2x.jpg',
+// tab_1x: '../src/img/vocab-tab.jpg',
+// tab_2x: '../src/img/vocab-tab-2x.jpg',
+// main: '../src/img/vocab-tab.jpg',
+
 const projectsList = document.querySelector('.projects-list');
 
 const projectImages = [
