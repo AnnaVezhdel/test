@@ -25,7 +25,7 @@ const projectImages = [
     tab_1x: '../img/book-tab.jpg',
     tab_2x: '../img/book-tab-2x.jpg',
     main: '../img/book-tab.jpg',
-    descript.ion: 'ReadJourney',
+    description: 'ReadJourney',
   },
   {
     mob_1x: '../img/pet-mob.jpg',
