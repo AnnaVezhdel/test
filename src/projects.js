@@ -2,25 +2,11 @@ import Swiper from 'swiper/bundle';
 import 'swiper/css';
 import 'swiper/css/navigation';
 
-new Swiper('.swiper-projects', {
-  direction: 'horizontal',
-  navigation: {
-    nextEl: '.projects-btn-next',
-    prevEl: '.projects-btn-prev',
-  },
-  slidesPerView: 1,
-  spaceBetween: 34,
-  keyboard: {
-    enabled: true,
-    onlyInViewport: false,
-  },
-});
-
-// import book_mob_1x from './img/book-mob.jpg';
-// import book_mob_2x from './img/book-mob-2x.jpg';
-// import book_tab_1x from './img/book-tab.jpg';
-// import book_tab_2x from './img/book-tab-2x.jpg';
-// import book_main from './img/book-tab.jpg';
+import book_mob_1x from './img/book-mob.jpg';
+import book_mob_2x from './img/book-mob-2x.jpg';
+import book_tab_1x from './img/book-tab.jpg';
+import book_tab_2x from './img/book-tab-2x.jpg';
+import book_main from './img/book-tab.jpg';
 
 import pet_mob_1x from './img/pet-mob.jpg';
 import pet_mob_2x from './img/pet-mob-2x.jpg';
@@ -36,11 +22,11 @@ import vocab_main from './img/vocab-tab.jpg';
 
 const projectImages = [
   {
-    mob_1x: './src/img/book-mob.jpg',
-    mob_2x: '../src/img/book-mob-2x.jpg',
-    tab_1x: './img/book-tab.jpg',
-    tab_2x: '../src/img/book-tab-2x.jpg',
-    main: '../src/img/book-tab.jpg',
+    mob_1x: book_mob_1x,
+    mob_2x: book_mob_2x,
+    tab_1x: book_tab_1x,
+    tab_2x: book_tab_2x,
+    main: book_main,
     description: 'ReadJourney',
   },
   {
@@ -142,4 +128,5 @@ function createProjectsSlideMarkup(
 projectImages.map(({ mob_1x, mob_2x, tab_1x, tab_2x, main, description }) => {
   createProjectsSlideMarkup(mob_1x, mob_2x, tab_1x, tab_2x, main, description);
 });
+
 
