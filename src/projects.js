@@ -20,27 +20,27 @@ const projectsList = document.querySelector('.projects-list');
 
 const projectImages = [
   {
-    mob_1x: 'book-mob.jpg',
-    mob_2x: 'book-mob-2x.jpg',
-    tab_1x: 'book-tab.jpg',
-    tab_2x: 'book-tab-2x.jpg',
-    main: 'book-tab.jpg',
+    mob_1x: './img/book-mob.jpg',
+    mob_2x: './img/book-mob-2x.jpg',
+    tab_1x: './img/book-tab.jpg',
+    tab_2x: './img/book-tab-2x.jpg',
+    main: './img/book-tab.jpg',
     description: 'ReadJourney',
   },
   {
-    mob_1x: 'pet-mob.jpg',
-    mob_2x: 'pet-mob-2x.jpg',
-    tab_1x: 'pet-tab.jpg',
-    tab_2x: 'pet-tab-2x.jpg',
-    main: 'pet-tab.jpg',
+    mob_1x: './img/pet-mob.jpg',
+    mob_2x: './img/pet-mob-2x.jpg',
+    tab_1x: './img/pet-tab.jpg',
+    tab_2x: './img/pet-tab-2x.jpg',
+    main: '../img/pet-tab.jpg',
     description: 'PetLove',
     },
   {
-    mob_1x: 'vocab-mob.jpg',
-    mob_2x: 'vocab-mob-2x.jpg',
-    tab_1x: 'vocab-tab.jpg',
-    tab_2x: 'vocab-tab-2x.jpg',
-    main: 'vocab-tab.jpg',
+    mob_1x: '../src/img/vocab-mob.jpg',
+    mob_2x: '../src/img/vocab-mob-2x.jpg',
+    tab_1x: '../src/img/vocab-tab.jpg',
+    tab_2x: '../src/img/vocab-tab-2x.jpg',
+    main: '../src/img/vocab-tab.jpg',
     description: 'VocabBuilder',
     }
 ];
@@ -75,19 +75,19 @@ function createProjectsSlideMarkup(mob_1x, mob_2x, tab_1x, tab_2x, main, descrip
             <picture class="projects-picture-item">
               <source
                 srcset="
-                ../src/img/${tab_1x} 1x,
-                ../src/img/${tab_2x} 2x"
+                ${tab_1x} 1x,
+                ${tab_2x} 2x"
                 media="(min-width: 768px)"
               />
               <source
                 srcset="
-                ../src/img/${mob_1x} 1x,
-                ../src/img/${mob_2x} 2x"
+                ${mob_1x} 1x,
+                ${mob_2x} 2x"
                 media="(max-width: 767px)"
               />
               <img
                 class="projects-img"
-                src="../src/img/${main}"
+                src="${main}"
                 alt="${description}"
                 width="614"
                 height="385"
