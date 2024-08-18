@@ -27,19 +27,19 @@ import{S as p}from"./assets/vendor-Bit1m2CU.js";(function(){const o=document.cre
             <picture class="projects-picture-item">
               <source
                 srcset="
-                ../img/${s} 1x,
-                ../img/${r} 2x"
+                ../src/img/${s} 1x,
+                ../src/img/${r} 2x"
                 media="(min-width: 768px)"
               />
               <source
                 srcset="
-                ../img/${c} 1x,
-                ../img/${o} 2x"
+                ../src/img/${c} 1x,
+                ../src/img/${o} 2x"
                 media="(max-width: 767px)"
               />
               <img
                 class="projects-img"
-                src="../img/${e}"
+                src="../src/img/${e}"
                 alt="${t}"
                 width="614"
                 height="385"
