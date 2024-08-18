@@ -20,27 +20,27 @@ const projectsList = document.querySelector('.projects-list');
 
 const projectImages = [
   {
-    mob_1x: './img/book-mob.jpg',
-    mob_2x: './img/book-mob-2x.jpg',
-    tab_1x: './img/book-tab.jpg',
-    tab_2x: './img/book-tab-2x.jpg',
-    main: './img/book-tab.jpg',
-    description: 'ReadJourney',
+    mob_1x: '../img/book-mob.jpg',
+    mob_2x: '../img/book-mob-2x.jpg',
+    tab_1x: '../img/book-tab.jpg',
+    tab_2x: '../img/book-tab-2x.jpg',
+    main: '../img/book-tab.jpg',
+    descript.ion: 'ReadJourney',
   },
   {
-    mob_1x: './img/pet-mob.jpg',
-    mob_2x: './img/pet-mob-2x.jpg',
-    tab_1x: './img/pet-tab.jpg',
-    tab_2x: './img/pet-tab-2x.jpg',
-    main: './img/pet-tab.jpg',
+    mob_1x: '../img/pet-mob.jpg',
+    mob_2x: '../img/pet-mob-2x.jpg',
+    tab_1x: '../img/pet-tab.jpg',
+    tab_2x: '../img/pet-tab-2x.jpg',
+    main: '../img/pet-tab.jpg',
     description: 'PetLove',
     },
   {
-    mob_1x: './img/vocab-mob.jpg',
-    mob_2x: './img/vocab-mob-2x.jpg',
-    tab_1x: './img/vocab-tab.jpg',
-    tab_2x: './img/vocab-tab-2x.jpg',
-    main: './img/vocab-tab.jpg',
+    mob_1x: '../img/vocab-mob.jpg',
+    mob_2x: '../img/vocab-mob-2x.jpg',
+    tab_1x: '../img/vocab-tab.jpg',
+    tab_2x: '../img/vocab-tab-2x.jpg',
+    main: '../img/vocab-tab.jpg',
     description: 'VocabBuilder',
     }
 ];
